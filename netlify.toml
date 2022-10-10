@@ -16,4 +16,4 @@
     for = "/*"
     [headers.values]
         Access-Control-Allow-Origin = "*"
-        Content-Security-Policy = "frame-ancestors 'self' ca-ch-spa.sap-process-automation.cfapps.eu10.hana.ondemand.com;"
+        X-Frame-Options = "ALLOW-FROM https://ca-ch-spa.sap-process-automation.cfapps.eu10.hana.ondemand.com";
