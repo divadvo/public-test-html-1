@@ -1,0 +1,9 @@
+---
+applications:
+  - name: ds-n-1
+    root: .
+    path: .
+    directory: visible
+    memory: 64M
+    location_include: includes/*.conf
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
