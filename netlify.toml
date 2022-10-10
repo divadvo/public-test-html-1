@@ -1,12 +1,18 @@
+[build]
+  # Directory to change to before starting a build.
+  # This is where we will look for package.json/.nvmrc/etc.
+  # If not set, defaults to the root directory.
+  base = "."
+
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+    from = "/*"
+    to = "/index.html"
+    status = 200
 
 [[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
+    # Define which paths this specific [[headers]] block will cover.
+    for = "/*"
     [headers.values]
-    Access-Control-Allow-Origin = "*"
+        Access-Control-Allow-Origin = "*"
